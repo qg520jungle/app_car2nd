@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>订单列表</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="./js/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div class="g-head">
+		<div class="m-nav f-cb">
+			<div class="back">
+				<i><</i>
+			</div>
+			<div class="title">
+				<span class="s-title">查定列表</span>
+			</div>
+			<div class="panel ">
+				<div class="j-panel">
+					<i>+</i>
+					<span class="s-panel">全部</span>
+				</div>
+				<ul class="panel-list u-popover bottom">
+					<i class="arrow"></i>
+					<li class="">全部</li>
+					<li class="">待定价</li>
+					<li class="last">已定价</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="g-body">
+		<div class="m-soa">
+			<i></i>
+			<input type="text" class="u-input u-input-search" placeholder="请输入品牌/车系/姓名/电话">
+		</div>
+		<div class="m-wrap-list">
+			<ul>
+				<li>
+					<div>	
+						<img src="" alt="">
+						<span>福特-福克斯 2012款 两厢1.6L 自动舒适版</span>
+						<span>定价</span><span>待定价</span>
+					</div>
+					<div>
+						<dl>
+							<dt>i</dt>
+							<dd>张三</dd>
+						</dl>
+						<dl>
+							<dt>i</dt>
+							<dd>13646589872</dd>
+						</dl>
+						<span>2.5年/4万公里</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="g-foot"></div>
+	<script>
+		$('.j-panel').on('click',function(){
+			if($('.panel-list').is(':visible')){
+				$('.panel-list').hide();
+			}else{$('.panel-list').show();}
+
+				
+		});
+	</script>
+</body>
+</html>

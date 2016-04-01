@@ -1,15 +1,91 @@
-@import './btn';
-@import './function';
-@import './skin';
-@import './u-icon';
-@import './unit';
-.g-head{
-	width: 100%;
-	height: 50px;
-	border: 1px solid red;
+@import "./var";
+@import "./reset";
+@import "./btn";
+@import "./function";
+@import "./skin";
+@import "./u-icon";
+@import "./unit";
+@import "./g";
+*{
+    font-family: "Microsoft Yahei"!important;
 }
-.g-body{
-	width: 100%;
-	height: 200px;
-	border: 1px solid green;
+.m-nav{
+    height: 45px;
+
+    background-color: #38b4e5;
+
+    color: #fff;
+    i{
+        vertical-align: middle;
+    }
+    .back{
+        width: 24%;
+        padding-left: 10px;
+
+        float: left;
+    }
+    .title{
+        width: 52%;
+
+        float: left;
+
+        text-align: center;
+    }
+    .panel{
+        width: 24%;
+
+        position: relative;
+
+        text-align: center;
+        padding-right: 10px;
+
+        float: left;
+    }
+    .panel-list{
+        width: 91.6%;
+		display: none;
+        opacity: .6;
+        border-radius: 3px;
+        background-color: #000;
+
+        position: absolute;
+        left:0;
+
+        text-align: center;
+        li{
+        	height: 40px;
+        	line-height: 40px;
+            border-bottom: 1px solid #fff;
+
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        li.last{
+            border: 0;
+        }
+    }
+    .u-popover .arrow{
+            border-width: 7px;
+            border-left: 5px solid transparent;
+    		border-right: 5px solid transparent;
+        }
+        .u-popover .arrow:after{
+            border-width: 7px;
+        }
+        .u-popover.bottom .arrow{
+        	top: -13px;
+        	margin-left: -4px;
+        	border-bottom-color: #000;
+        }
+        .u-popover.bottom .arrow:after{
+        	border-bottom-color: #000;
+        	margin-left: -7px;
+        }
+}
+.m-soa{
+	background-color: #ecf1f2;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 0
 }
